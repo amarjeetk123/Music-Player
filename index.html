@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/694a00980e.js" crossorigin="anonymous"></script>
+  <title>Music App</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            color:"#808080",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <div class="wrapper px-2 py-4  relative w-[300px] max-h-[480px] rounded-[12px] shadow-lg shadow-red-500 ml-10 mt-10 ">
+
+      <div class="top_bar flex items-center justify-between">
+        <i class="fa-solid fa-angle-down cursor-pointer"></i>
+        <div class="song_number text-[20px]">Playing x of y</div>
+        <i class="fa-solid fa-ellipsis cursor-pointer"></i>
+      </div>
+        
+        
+        <div class="image_div my-4 flex justify-center">
+          <img src="./image/1st.jpg" alt=""  >
+        </div>
+
+        <div class="song_detailes text-center">
+          <h1 class="song_name text-[24px]">Kesariya - Brahmāstra</h1>
+          <h1 class="artist_name text-[24px]">Arijit Singh</h1>
+        </div>
+
+        <div class="progress_area w-[100%] h-2 bg-white rounded-[5px]">
+          <!-- <div class=" w-[50%] bg-red-500 " style="height:inherit ; border-radius: inherit;" >
+            <span></span>
+          </div> -->
+          <div class="timer my-4 flex gap-1 justify-center items-center">
+            <span class="current_time">0:00</span>
+            <input type="range" name="" id="" min="1" max="100" value="0" class="time_slider" onchange="time_seek()">
+            <span class="total_time">0:00</span>
+          </div>
+          <!-- <audio id="main_music" src=""></audio> -->
+        </div>
+       
+
+        <div class="control_btns flex items-center justify-between mt-8 text-red-500 ">
+          <i class="fa-solid fa-shuffle fa-2x cursor-pointer random_btn" onclick="random_play()" ></i>
+          <i class="fa-solid fa-backward-step fa-2x cursor-pointer" onclick="previous()" ></i>
+          <div class="paly_pouse_btn flex justify-center items-center p-[2px] rounded-[50%] border-2 border-indigo-500 cursor-pointer " onclick="play_pause()">
+            <i class="fa-solid fa-circle-play fa-2x  "></i>
+          </div>
+          <i class="fa-solid fa-forward-step fa-2x cursor-pointer" onclick="next()"  ></i>
+          <i class="fa-solid fa-pause fa-3x cursor-pointer" onclick="open_music_list()"></i>
+        </div>
+
+        <div class="music_list bg-white py-4 px-6 rounded-[12px] absolute  w-[100%]   shadow-xl shadow-gray-500">
+          <div class="head_icon flex justify-between items-center">
+            <div class="left opacity-60">
+              <i class="fa-regular fa-list-music mr-[2px]" >jj</i>
+              <span class="text-[20px] font-medium -mt-">Music List</span>
+            </div>
+            <div class="right">
+              <i class="fa fa-x text-[25px] cursor-pointer text-indigo-700" onclick="close_music_list()" ></i>
+            </div>
+          </div>
+    
+          <ul class="my-[10px]">
+            <li class="">
+             <div>
+              <h2 class="song_name text-[21px]">Kesariya - Brahmāstra</h2>
+              <span class="artist_name text-[18px] opacity-75 ">Arijit Singh</span>
+             </div>
+              <span class="song_duration">00:00</span>
+            </li>
+            <li class="">
+              <div>
+               <h2 class="song_name text-[21px]">Kesariya - Brahmāstra</h2>
+               <span class="artist_name text-[18px] opacity-75 ">Arijit Singh</span>
+              </div>
+               <span class="song_duration">00:00</span>
+             </li>
+             <li class="">
+              <div>
+               <h2 class="song_name text-[21px]">Kesariya - Brahmāstra</h2>
+               <span class="artist_name text-[18px] opacity-75 ">Arijit Singh</span>
+              </div>
+               <span class="song_duration">00:00</span>
+             </li>
+            </li>
+          </ul>
+        </div>
+
+
+        <div id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+
+    </div>
+   
+
+  
+<script src="./js_file/music_list.js"></script>
+<script src="./js_file/script.js"></script>
+</body>
+</html>
