@@ -40,6 +40,8 @@ function load_music(index) {
 
 song_number.innerHTML = `Playing ${index+1} of ${music_list_length+1}`
     updateTimer = setInterval(time_update, 1000);
+
+    current_track.addEventListener("ended" , next)
 }
 
 
@@ -98,7 +100,12 @@ function previous() {
     playMusic()
 }
 
-
+// code for repeat button
+function repeat(){
+    let current_index = index;
+    load_music(current_index);
+    playMusic();
+}
 // code for random music
 function random_play() {
     is_random ? pause_random() : play_random();
