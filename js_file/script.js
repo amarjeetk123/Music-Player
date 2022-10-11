@@ -68,6 +68,7 @@ function pauseMusic() {
     paly_pouse_btn.innerHTML = '<i class="fa-solid fa-circle-play fa-2x  "></i>'
     paly_pouse_btn.classList.remove("randomActive")
     wave.classList.remove("loader")
+    image.classList.remove("rotate")
 }
 
 
