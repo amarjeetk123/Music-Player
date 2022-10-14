@@ -6,7 +6,7 @@
  - ` Random Song Play `
  -  ` Song  List `
  -  ` Song Length `
- - ` Song Reset `
+ - ` Song Restart `
 
 
 ![](https://img.shields.io/badge/Project-11-p)
@@ -21,11 +21,11 @@
   - ` Tailwind CSS ` 
   - ` JS ` 
   
-[Live Link](https://app.netlify.com/sites/amarjeet-music-player/overview)
+ Live Link :- [ Click here ](https://app.netlify.com/sites/amarjeet-music-player/overview)
 
 ![](./Image/Screenshot%20(72).png)
 
-### Time Taken For This Project:- 3 hours.
+## It took almost 4 hour to complete.
 
 ### What I learned from this project?
  - How We can Play Music through JavaScript.
