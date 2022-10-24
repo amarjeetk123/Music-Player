@@ -21,7 +21,7 @@
   - ` Tailwind CSS ` 
   - ` JS ` 
   
- Live Link :- [ Click here ](https://app.netlify.com/sites/amarjeet-music-player/overview)
+ Live Link :- [ Click here ](https://amarjeet-music-player.netlify.app/)
 
 ![](./Image/Screenshot%20(72).png)
 
