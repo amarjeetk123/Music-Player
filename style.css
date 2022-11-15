@@ -105,7 +105,6 @@ ul li h2 {
 }
 
 .loader {
-
     height: 70px;
     display: flex;
     justify-content: center;
@@ -115,7 +114,6 @@ ul li h2 {
 
 .loader .stroke {
     background-color: #f1f1f1;
-   
     height: 150%;
     width: 7px;
     border-radius: 50px;
